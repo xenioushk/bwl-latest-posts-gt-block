@@ -1,0 +1,16 @@
+{
+	"json.schemas": [],
+	"editor.formatOnSave": false,
+	"editor.defaultFormatter": null,
+	"workbench.settings.useSplitJSON": true,
+	"prettier.disableLanguages": [ "php" ],
+	"[php]": {
+		"editor.defaultFormatter": "junstyle.php-cs-fixer",
+		"editor.formatOnSave": true
+	},
+	"php-cs-fixer.rules": {
+		"braces": { "position_after_functions_and_oop_constructs": "same" },
+		"class_definition": { "single_line": false }
+	},
+	"php-cs-fixer.onsave": true
+}
