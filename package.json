@@ -35,7 +35,7 @@
 		"@wordpress/stylelint-config": "^22.6.0",
 		"eslint-config-prettier": "^9.1.0",
 		"husky": "^9.1.5",
-		"lint-staged": "^15.2.9",
+		"lint-staged": "^15.2.10",
 		"stylelint": "^14.16.1"
 	},
 	"dependencies": {
