@@ -76,6 +76,7 @@ export default function Edit( { attributes, setAttributes } ) {
 		}
 	}
 	// console.log( tagSuggestions );
+	// console.log( tagSuggestions );
 
 	const handleDisplayFeaturedImage = ( status ) => {
 		setAttributes( { displayFeaturedImage: status } );
