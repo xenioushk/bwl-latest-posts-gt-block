@@ -41,7 +41,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				post_tag: tagsId,
 			} );
 		},
-		[ numberOfPosts, order, orderBy, catIds, tagsId ]
+		[ numberOfPosts, order, orderBy, categories, tags ]
 	);
 
 	// Get all the categories.
