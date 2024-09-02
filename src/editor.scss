@@ -8,22 +8,30 @@
 	background: #eee;
 	border: 1px solid #ccc;
 	padding: 12px;
+
 	div {
 		margin: 0 0 1rem 0 !important;
+
 		div {
-			margin: 0px !important;
+			margin: 0 !important;
 		}
+
 		h2 {
-			line-height: 1.5rem !important;
+			line-height: 24px !important;
 			margin: 0 !important;
 			font-size: 24px;
 			font-weight: 600;
+
 			a {
 				text-decoration: none;
 			}
+
 		}
+
 		time {
 			font-size: 14px;
 		}
+
 	}
+
 }
