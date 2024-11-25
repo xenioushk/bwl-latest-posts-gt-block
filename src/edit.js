@@ -9,6 +9,7 @@ import {
 	SelectControl,
 } from '@wordpress/components';
 import { format, dateI18n, getSettings } from '@wordpress/date';
+import './editor.scss';
 
 export default function Edit( { attributes, setAttributes } ) {
 	const {
@@ -178,7 +179,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							post._embedded[ 'wp:featuredmedia' ].length > 0 &&
 							post._embedded[ 'wp:featuredmedia' ][ 0 ];
 						return (
-							<div key={ post.id }>
+							<div className="blog-post" key={ post.id }>
 								{ post.title && (
 									<h2>
 										<a href={ post.link }>

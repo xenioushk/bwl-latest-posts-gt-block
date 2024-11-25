@@ -59,11 +59,11 @@ class AdminEnqueue extends BaseController {
 		// Required JS & CSS Files For KB Shortcode Button.
 		wp_enqueue_style( 'bkb-shortcode-editor-multiple-select-style',
 			$this->thirdPartyAssetsDir . 'tinymce/css/multiple-select.css',
-			[], $this->plugin_version);
+        [], $this->plugin_version);
 		wp_enqueue_script( 'bkb-admin-mutiple-select-script',
 			$this->thirdPartyAssetsDir . 'tinymce/js/jquery.multiple.select.js',
-			['jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-draggable', 'jquery-ui-droppable'],
-			$this->plugin_version, true);
+			[ 'jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-draggable', 'jquery-ui-droppable' ],
+        $this->plugin_version, true);
 
 		// Load live Font Awesome icon changes only in KB pages.
 
@@ -78,7 +78,7 @@ class AdminEnqueue extends BaseController {
 			wp_enqueue_style( 'bkbm-admin-rtl-styles',
 				$this->pluginStylesDir . 'admin_rtl.css',
 				[],
-				$this->plugin_version);
+            $this->plugin_version);
 		}
 	}
 

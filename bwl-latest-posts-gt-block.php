@@ -15,30 +15,32 @@
  */
 
 // security check.
-defined( 'ABSPATH' ) or die( 'Unauthorized access' );
+defined('ABSPATH') or die('Unauthorized access');
 
-if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
 	require_once __DIR__ . '/vendor/autoload.php';
 }
 
-define( 'BLPGTB_DIR', __DIR__ );
+define('BLPGTB_DIR', __DIR__);
 
 use Xenioushk\Bwllpgtb\Base\Activate;
 use Xenioushk\Bwllpgtb\Base\Deactivate;
 
-function bwllpgtbActivePlugin() {
+function bwllpgtbActivePlugin()
+{
 	Activate::activate();
 }
 
-register_activation_hook( __FILE__, 'bwllpgtbActivePlugin' );
+register_activation_hook(__FILE__, 'bwllpgtbActivePlugin');
 
-function bwllpgtbDeactivePlugin() {
+function bwllpgtbDeactivePlugin()
+{
 	Deactivate::deactivate();
 }
 
-register_activation_hook( __FILE__, 'bwllpgtbDeactivePlugin' );
+register_activation_hook(__FILE__, 'bwllpgtbDeactivePlugin');
 
-if ( class_exists( 'Xenioushk\\Bwllpgtb\\Init' ) ) {
+if (class_exists('Xenioushk\\Bwllpgtb\\Init')) {
 
 	Xenioushk\Bwllpgtb\Init::registerServices();
 }

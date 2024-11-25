@@ -2,13 +2,21 @@
 <ruleset name="BWL"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
-    <description>A custom set of rules to check styles for a BWL WP projects</description>
+    <description>A custom set of rules to check styles for a BWL WordPress Themes and plugins.</description>
+
+    <arg value="sp"/> <!-- Show sniff and progress -->
+    <arg name="colors"/>
+    <arg name="extensions" value="php"/>
+    <arg name="parallel" value="20"/>
 
     <file>.</file>
 
     <!-- Exclude Composer vendor directory. -->
     <exclude-pattern>*/.git/*</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/src/*</exclude-pattern>
+    <exclude-pattern>*/build/*</exclude-pattern>
 
     <!--
         Don't check Plugins, we might not have option (or resources) to fix them.
@@ -250,16 +258,4 @@
             <property name="allowMultipleArguments" value="true"/>
         </properties>
     </rule>
-
-    <!-- Exclude Composer vendor directory. -->
-    <exclude-pattern>*/.git/*</exclude-pattern>
-    <exclude-pattern>*/vendor/*</exclude-pattern>
-    <exclude-pattern>*/node_modules/*</exclude-pattern>
-    <exclude-pattern>*/src/*</exclude-pattern>
-    <exclude-pattern>*/build/*</exclude-pattern>
-
-    <arg value="sp"/> <!-- Show sniff and progress -->
-    <arg name="colors"/>
-    <arg name="extensions" value="php"/>
-    <arg name="parallel" value="2"/>
 </ruleset>
